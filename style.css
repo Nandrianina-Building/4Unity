@@ -229,6 +229,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero{
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding: 140px 0 80px;
@@ -500,8 +501,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .main-nav.is-open ul{ flex-direction: column; gap: 6px; }
   .main-nav.is-open .nav-link{ display: block; padding: 12px 6px; }
 
-  .hero-inner{ grid-template-columns: 1fr; }
-  .hero-visual{ height: 360px; order: -1; }
+  .hero{ padding: 108px 0 60px; }
+  .hero-inner{ grid-template-columns: 1fr; gap: 44px; }
+  .hero-visual{ height: 280px; order: -1; }
+  .hero-content{ order: 0; }
 
   .about-grid{ grid-template-columns: 1fr; }
   .about-media{ order: -1; }
@@ -511,6 +514,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (max-width: 680px){
   .section{ padding: 90px 0; }
+
+  .hero{ padding: 96px 0 48px; }
+  .hero-title{ font-size: clamp(2.1rem, 9vw, 2.8rem); }
+  .hero-slogan{ font-size: 1.05rem; }
+  .hero-visual{ height: 220px; }
+  .hero-actions{ flex-direction: column; margin-bottom: 40px; }
+  .hero-actions .btn{ flex: 1 1 auto; width: 100%; justify-content: center; }
+  .hero-stats{ grid-template-columns: 1fr 1fr; gap: 20px 16px; max-width: none; }
+  .stat-label{ max-width: none; }
+
   .team-grid{ grid-template-columns: 1fr; }
   .services-grid{ grid-template-columns: 1fr; }
   .why-grid{ grid-template-columns: 1fr; }
@@ -518,5 +531,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .form-row{ grid-template-columns: 1fr; }
   .about-media-frame img{ height: 340px; }
   .projects-soon{ padding: 44px 24px; }
-  .hero-actions .btn{ flex: 1 1 auto; }
+}
+
+@media (max-width: 400px){
+  .hero-stats{ grid-template-columns: 1fr; }
 }
