@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: 4unity.rnandrianina11.workers.dev/sitemap.xml
+Sitemap: https://4unity.rnandrianina11.workers.dev/sitemap.xml
