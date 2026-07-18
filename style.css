@@ -503,7 +503,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   .hero{ padding: 108px 0 60px; }
   .hero-inner{ grid-template-columns: 1fr; gap: 44px; }
-  .hero-visual{ height: 280px; order: -1; }
+  .hero-visual{ height: 380px; order: -1; }
   .hero-content{ order: 0; }
 
   .about-grid{ grid-template-columns: 1fr; }
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero{ padding: 96px 0 48px; }
   .hero-title{ font-size: clamp(2.1rem, 9vw, 2.8rem); }
   .hero-slogan{ font-size: 1.05rem; }
-  .hero-visual{ height: 220px; }
+  .hero-visual{ height: 400px; }
   .hero-actions{ flex-direction: column; margin-bottom: 40px; }
   .hero-actions .btn{ flex: 1 1 auto; width: 100%; justify-content: center; }
   .hero-stats{ grid-template-columns: 1fr 1fr; gap: 20px 16px; max-width: none; }
@@ -535,4 +535,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (max-width: 400px){
   .hero-stats{ grid-template-columns: 1fr; }
+  .hero-visual{ height: 260px; }
 }
