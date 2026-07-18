@@ -503,7 +503,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   .hero{ padding: 108px 0 60px; }
   .hero-inner{ grid-template-columns: 1fr; gap: 44px; }
-  .hero-visual{ height: 380px; order: -1; }
+  .hero-visual{ height: 400px; order: -1; }
   .hero-content{ order: 0; }
 
   .about-grid{ grid-template-columns: 1fr; }
